@@ -1,0 +1,25 @@
+/*CSS general de elementos*/
+body{
+    font-family:'Courier New', monospace;
+    background-color: #222;
+    color: white;
+}
+h1{
+    font-size: 36px;
+}
+h2{
+    font-size: 24px;
+}
+h3{
+    color: #999
+}
+/*CSS ID y Clase*/
+.hastag{
+    color: #ffc900;
+    font-size: 24px;
+    font-weight: 800;
+}
+#experiencia{
+    background-color: white;
+    color: #222;
+}
