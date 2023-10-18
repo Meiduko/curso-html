@@ -1,17 +1,27 @@
 /*CSS general de elementos*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
 body{
-    font-family:'Courier New', monospace;
     background-color: #222;
     color: white;
-}
-h1{
-    font-size: 36px;
+    font: 200 14px 'Poppins', sans-serif;
 }
 h2{
-    font-size: 24px;
+    font-size: 36px;
+    line-height: 36px;
 }
 h3{
-    color: #999
+    color: #999;
+    font-size: 18px;
+    font-weight: 300;
+}
+p{
+    text-align: justify;
+}
+cite{
+    font-weight: 300;
 }
 /*CSS ID y Clase*/
 .hastag{
@@ -19,7 +29,22 @@ h3{
     font-size: 24px;
     font-weight: 800;
 }
+.seccion{
+    padding: 10px 100px 10px 100px ;
+}
+#inicio{
+    background-image: url("../imágenes/Inicio.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    min-height: 280px;
+
+}
 #experiencia{
     background-color: white;
     color: #222;
+    text-align: center;
+}
+#portfolio{
+    border-top: 1px solid #ffc900;
+    text-align: center;
 }
