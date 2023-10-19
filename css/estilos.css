@@ -23,6 +23,25 @@ p{
 cite{
     font-weight: 300;
 }
+i{
+    font-size: 24px;
+}
+i:hover{
+    color: #ffc900
+}
+a:any-link{
+    color: white
+}
+a:-webkit-any-link{
+    color: white
+}
+a:-moz-any-link{
+    color: white
+}
+li{
+    float: left;
+    margin-right: 5px;
+}
 /*CSS ID y Clase*/
 .hastag{
     color: #ffc900;
@@ -31,6 +50,10 @@ cite{
 }
 .seccion{
     padding: 10px 100px 10px 100px ;
+}
+#redessociales{
+    margin-top: 100px;
+    list-style: none;
 }
 #inicio{
     background-image: url("../imágenes/Inicio.png");
