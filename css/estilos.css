@@ -7,6 +7,7 @@ body{
     background-color: #222;
     color: white;
     font: 200 14px 'Poppins', sans-serif;
+    min-width: fit-content;
 }
 h2{
     font-size: 36px;
@@ -23,14 +24,14 @@ nav{
     background-color: #222;
     border-bottom: 1px solid white;
     height: 55px;
-    padding-top: 10px;
+    padding-bottom: 10px;
     text-align: center;
 }
 nav ul{
     display: inline-block;
 }
 nav ul li{
-    padding-top: 15px;
+    padding-top: 22px;
 }
 footer{
     background-color: #222;
@@ -51,10 +52,8 @@ p{
 cite{
     font-weight: 300;
 }
-i{
-
-}
 a:any-link{
+    text-decoration: none;
     color: white
 }
 a:-webkit-any-link{
@@ -66,11 +65,14 @@ a:-moz-any-link{
 ul{
     list-style: none;
 }
+a:hover{
+    color: #ffc900;
+}
 li{
     float: left;
     margin-right: 5px;
 }
-/*CSS ID y Clase*/
+/*CSS Clase*/
 .hastag{
     color: #ffc900;
     font-size: 24px;
@@ -79,25 +81,128 @@ li{
 .seccion{
     padding: 10px 100px 10px 100px ;
 }
+.infosobremi{
+    display: grid;
+    grid-template-columns: 200px max-content;
+    padding-left: 20px;
+}
+.infosobremi h3, h4{
+    padding: 5px;
+}
+.filaportfolio{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px 20px;
+    flex-wrap: wrap;
+    margin: 15px 0;
+}
+.filaportfolio .card{
+    background-color: #111;
+    border: 1px solid #ffc900;
+    width: 250px;
+    height: 360px;
+    border-radius: 15px;
+}
+.card img, .card video{
+    border-radius: 15px 15px 0 0; 
+
+}
+.card h3{
+    color: #ffc900;
+}
+.masinfo button{
+    color: #222;
+    background-color: #ffc900;
+    font-weight: 600;
+    padding: 5px 10px;
+    float: right;
+    border-radius: 15px;
+    margin-bottom: 5px;
+    height: 26px;
+}
+.card .sep{
+    height: 20px;
+    border-bottom: 1px solid #ffc900;
+}
+.filaexperiencia{
+    display: grid;
+    grid-template-columns: repeat(3,300px);
+    grid-template-rows: repeat(2,150px);
+    grid-gap: 50px;
+    align-content: space-around;
+    justify-content: center;
+    margin-top: 20px;
+}
+.cardexp{
+    background-color: #222;
+    color: white;
+    border-radius: 10px;
+}
+.cardexp ul{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 5px;
+    padding-top: 10px;
+}
+.cardexp li{
+    height: 30px;
+}
+.cardexp h2, .cardexp h3, .cardexp p{
+    float: left;
+    padding: 10px 10px 0px 10px
+}
+/*Formulario*/
+.itemform{
+    display: grid;
+    grid-template-columns: 150px 350px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.itemform label{
+    font-weight: 700;
+}
+.itemform input, .itemform textarea{
+    border-radius: 5px;
+    border: 1px solid #222;
+}
+input[type="submit"]{
+    background-color: #222;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    grid-column: 2/3;
+    justify-self: end;
+}
+/*CSS ID*/
 #logo{
     padding-top: 0px;
     font-size: 45px;
     padding-bottom: 10px;
 }
 #redessociales{
-    margin-top: 100px;
+    padding-top: 0px;
     font-size: 24px;
-
-}
-#redessociales i:hover{
-    color: #ffc900
 }
 #inicio{
-    background-image: url("../imágenes/Inicio.png");
+    background-image: url("https://i.postimg.cc/rmd0JbcS/Inicio.png");
     background-repeat: no-repeat;
     background-size:cover;
     min-height: 280px;
     padding-top: 70px;
+}
+#sobremi{
+    min-height: 350px;
+}
+#sobremi .masinfo button{
+    float: left;
+    padding: 5px 20px 15px 20px;
+    margin-bottom: 0;
+    margin-left: 5px;
+}
+#sobremi iframe{
+    float: left;
+    border-radius: 5px;
+    border: 1px solid #ffc900;
 }
 #experiencia{
     background-color: white;
@@ -105,6 +210,17 @@ li{
     text-align: center;
 }
 #portfolio{
+    margin-top: 5px;
     border-top: 1px solid #ffc900;
     text-align: center;
+}
+#portfolio .card h3,#portfolio .card h4,#portfolio .card p, #portfolio .masinfo{
+    padding: 0 15px;
+}
+#contactar{
+    color: #222;
+    background-color: #ffc900;
+}
+#contactar h3{
+    font-weight: 600;
 }
